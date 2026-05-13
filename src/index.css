@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-primary-red: #E30613;
+  --color-luxury-black: #0A0A0A;
+  --color-luxury-gray: #1A1A1A;
+}
+
+@layer base {
+  body {
+    @apply bg-luxury-black text-white antialiased selection:bg-primary-red selection:text-white;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .luxury-gradient {
+    background: linear-gradient(135deg, rgba(227, 6, 19, 0.1) 0%, rgba(10, 10, 10, 0) 100%);
+  }
+
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-luxury-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-luxury-gray rounded-full hover:bg-primary-red transition-colors;
+}
