@@ -55,23 +55,23 @@ const CARS = [
 const SERVICES = [
   {
     icon: <ShieldCheck className="w-6 h-6" />,
-    title: 'Procedência Garantida',
-    description: 'Todos os nossos veículos passam por uma rigorosa perícia técnica e documental.'
+    title: 'Procedencia Garantizada',
+    description: 'Todos nuestros vehículos pasan por una rigurosa pericia técnica y documental.'
   },
   {
     icon: <Wrench className="w-6 h-6" />,
-    title: 'Pós-Venda Especializado',
-    description: 'Suporte técnico completo e oficina de alta performance para manter seu investimento impecável.'
+    title: 'Post-Venta Especializado',
+    description: 'Soporte técnico completo y taller de alta performance para mantener su inversión impecable.'
   },
   {
     icon: <TrendingUp className="w-6 h-6" />,
-    title: 'Importação Sob Medida',
-    description: 'Trazemos o carro dos seus sonhos diretamente para Ciudad del Este com agilidade e transparência.'
+    title: 'Importación a Medida',
+    description: 'Traemos el auto de sus sueños directamente a Ciudad del Este con agilidad y transparencia.'
   },
   {
     icon: <Award className="w-6 h-6" />,
-    title: 'Exclusividade',
-    description: 'Acesso antecipado aos lançamentos mais desejados do mercado automotivo mundial.'
+    title: 'Exclusividad',
+    description: 'Acceso anticipado a los lanzamientos más deseados del mercado automotriz mundial.'
   }
 ];
 
@@ -109,7 +109,7 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-10">
-          {['Inventário', 'Serviços', 'Sobre nós', 'Contato'].map((link) => (
+          {['Inventario', 'Servicios', 'Sobre nosotros', 'Contacto'].map((link) => (
             <a 
               key={link} 
               href={`#${link.toLowerCase().replace(' ', '-')}`}
@@ -120,7 +120,7 @@ const Navbar = () => {
             </a>
           ))}
           <button className="bg-primary-red text-white text-xs font-bold uppercase tracking-widest px-6 py-3 rounded-sm hover:bg-white hover:text-luxury-black transition-all duration-300">
-            Falar Consultor
+            Hablar con Asesor
           </button>
         </div>
 
@@ -142,7 +142,7 @@ const Navbar = () => {
             exit={{ opacity: 0, y: -20 }}
             className="absolute top-full left-0 w-full bg-luxury-gray border-t border-white/10 p-6 flex flex-col gap-6 md:hidden"
           >
-            {['Inventário', 'Serviços', 'Sobre nós', 'Contato'].map((link) => (
+            {['Inventario', 'Servicios', 'Sobre nosotros', 'Contacto'].map((link) => (
               <a 
                 key={link} 
                 href={`#${link.toLowerCase()}`}
@@ -186,17 +186,17 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <span className="inline-block px-4 py-1.5 border border-primary-red/30 bg-primary-red/5 rounded-full text-[10px] font-bold tracking-[0.4em] uppercase text-primary-red mb-6">
-            Exclusividade & Tradição MultiMarcas
+            Exclusividad & Tradición MultiMarcas
           </span>
           <h1 className="text-5xl md:text-8xl font-display font-light leading-[0.9] tracking-tighter mb-8 max-w-4xl mx-auto text-balance">
-            DEFININDO O <span className="font-bold underline decoration-primary-red/30">PADRÃO LUXO</span> NO PARAGUAI
+            DEFINIENDO EL <span className="font-bold underline decoration-primary-red/30">ESTÁNDAR DE LUJO</span> EN PARAGUAY
           </h1>
           <p className="text-lg md:text-xl font-light text-white/60 max-w-2xl mx-auto mb-12">
-            A boutique automotiva mais exclusiva de Ciudad del Este. Onde a paixão por motores encontra a sofisticação absoluta.
+            La boutique automotriz más exclusiva de Ciudad del Este. Donde la pasión por los motores se encuentra con la sofisticación absoluta.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-primary-red text-white px-10 py-5 text-sm font-bold uppercase tracking-[0.2em] hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary-red/20 group flex items-center justify-center gap-2">
-              Ver Coleção
+              Ver Colección
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
             <button className="bg-white/5 backdrop-blur-sm border border-white/10 text-white px-10 py-5 text-sm font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-luxury-black transition-all">
@@ -211,16 +211,16 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-end border-t border-white/10 pt-8">
           <div className="flex gap-16">
             <div>
-              <p className="text-[10px] uppercase font-bold text-white/40 mb-1 tracking-widest">Localização</p>
-              <p className="text-xs font-medium">Ciudad del Este, Paraguai</p>
+              <p className="text-[10px] uppercase font-bold text-white/40 mb-1 tracking-widest">Localización</p>
+              <p className="text-xs font-medium">Ciudad del Este, Paraguay</p>
             </div>
             <div>
-              <p className="text-[10px] uppercase font-bold text-white/40 mb-1 tracking-widest">Ano de Origem</p>
+              <p className="text-[10px] uppercase font-bold text-white/40 mb-1 tracking-widest">Año de Origen</p>
               <p className="text-xs font-medium">Desde 2012</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <p className="text-[10px] uppercase font-bold text-white/40 mb-1 tracking-widest">Nossas Redes</p>
+            <p className="text-[10px] uppercase font-bold text-white/40 mb-1 tracking-widest">Nuestras Redes</p>
             <div className="flex gap-4">
               <Instagram className="w-4 h-4 text-white/60 hover:text-primary-red cursor-pointer transition-colors" />
               <Facebook className="w-4 h-4 text-white/60 hover:text-primary-red cursor-pointer transition-colors" />
@@ -234,15 +234,15 @@ const Hero = () => {
 
 const Inventory = () => {
   return (
-    <section id="inventário" className="py-24 bg-luxury-black">
+    <section id="inventario" className="py-24 bg-luxury-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
-            <span className="text-primary-red font-bold text-xs uppercase tracking-[0.3em] block mb-4">Seleção Exclusiva</span>
-            <h2 className="text-4xl md:text-6xl font-display font-medium tracking-tight">INVENTÁRIO <span className="opacity-30">PREMIUM</span></h2>
+            <span className="text-primary-red font-bold text-xs uppercase tracking-[0.3em] block mb-4">Selección Exclusiva</span>
+            <h2 className="text-4xl md:text-6xl font-display font-medium tracking-tight">INVENTARIO <span className="opacity-30">PREMIUM</span></h2>
           </div>
           <button className="flex items-center gap-2 text-white/60 hover:text-white transition-colors group">
-            <span className="text-xs font-bold uppercase tracking-widest">Ver todos os modelos</span>
+            <span className="text-xs font-bold uppercase tracking-widest">Ver todos los modelos</span>
             <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
@@ -276,7 +276,7 @@ const Inventory = () => {
                   
                   <div className="grid grid-cols-3 gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
                     <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-sm">
-                      <p className="text-[8px] uppercase text-white/40 tracking-widest mb-1">Potência</p>
+                      <p className="text-[8px] uppercase text-white/40 tracking-widest mb-1">Potencia</p>
                       <p className="text-xs font-bold">{car.stats.hp} HP</p>
                     </div>
                     <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-sm">
@@ -300,16 +300,16 @@ const Inventory = () => {
 
 const Services = () => {
   return (
-    <section id="serviços" className="py-24 bg-luxury-gray relative overflow-hidden">
+    <section id="servicios" className="py-24 bg-luxury-gray relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-primary-red/5 blur-[120px] rounded-full -mr-20 -mt-20" />
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="text-primary-red font-bold text-xs uppercase tracking-[0.3em] block mb-4">Nossa Excelência</span>
-            <h2 className="text-4xl md:text-6xl font-display font-medium tracking-tight mb-8">POR QUE ESCOLHER A <span className="italic text-primary-red uppercase">MultiMarcas</span>?</h2>
+            <span className="text-primary-red font-bold text-xs uppercase tracking-[0.3em] block mb-4">Nuestra Excelencia</span>
+            <h2 className="text-4xl md:text-6xl font-display font-medium tracking-tight mb-8">¿POR QUÉ ELEGIR <span className="italic text-primary-red uppercase">MultiMarcas</span>?</h2>
             <p className="text-lg text-white/60 mb-12 max-w-xl">
-              Referência em Ciudad del Este, a MultiMarcas une tradição e exclusividade. Oferecemos uma seleção criteriosa dos melhores veículos mundiais.
+              Referencia en Ciudad del Este, MultiMarcas une tradición y exclusividad. Ofrecemos una selección minuciosa de los mejores vehículos mundiales.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -337,7 +337,7 @@ const Services = () => {
               />
               <div className="absolute bottom-6 -left-10 bg-primary-red p-8 z-20 hidden lg:block">
                 <p className="text-4xl font-display font-bold italic mb-1 leading-none text-primary-red">+12</p>
-                <p className="text-[10px] uppercase font-bold tracking-widest opacity-80">Anos de Liderança</p>
+                <p className="text-[10px] uppercase font-bold tracking-widest opacity-80">Años de Liderazgo</p>
               </div>
             </div>
           </div>
@@ -349,11 +349,11 @@ const Services = () => {
 
 const Contact = () => {
   return (
-    <section id="contato" className="py-24 bg-luxury-black">
+    <section id="contacto" className="py-24 bg-luxury-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
-            <h2 className="text-4xl md:text-6xl font-display font-medium tracking-tight mb-12">ESTAMOS <br/><span className="text-primary-red">À SUA ESPERA</span></h2>
+            <h2 className="text-4xl md:text-6xl font-display font-medium tracking-tight mb-12">ESTAMOS <br/><span className="text-primary-red">ESPERÁNDOTE</span></h2>
             
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
@@ -361,9 +361,9 @@ const Contact = () => {
                   <MapPin className="w-5 h-5 text-primary-red" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">Nosso Endereço</h4>
-                  <p className="text-lg">Av. Monseñor Rodriguez, Km 4 <br/>7000 Ciudad del Este, Paraguai</p>
-                  <a href="https://maps.app.goo.gl/uXhV34XAAyeTXCu46" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-xs font-bold text-primary-red uppercase tracking-widest border-b border-primary-red/30 pb-0.5 hover:border-primary-red transition-all">Ver no Google Maps</a>
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">Nuestra Dirección</h4>
+                  <p className="text-lg">Av. Monseñor Rodriguez, Km 4 <br/>7000 Ciudad del Este, Paraguay</p>
+                  <a href="https://maps.app.goo.gl/uXhV34XAAyeTXCu46" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-xs font-bold text-primary-red uppercase tracking-widest border-b border-primary-red/30 pb-0.5 hover:border-primary-red transition-all">Ver en Google Maps</a>
                 </div>
               </div>
               
@@ -372,7 +372,7 @@ const Contact = () => {
                   <Phone className="w-5 h-5 text-primary-red" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">Atendimento</h4>
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">Atención</h4>
                   <p className="text-lg">+595 983 617192</p>
                   <p className="text-sm text-white/50">vendas@multimarcascde.com.py</p>
                 </div>
@@ -390,12 +390,12 @@ const Contact = () => {
           </div>
 
           <div className="bg-luxury-gray p-10 relative">
-            <h3 className="text-xl font-display font-medium mb-8 uppercase tracking-widest">Enviar Mensagem</h3>
+            <h3 className="text-xl font-display font-medium mb-8 uppercase tracking-widest">Enviar Mensaje</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="text-[10px] uppercase font-bold text-white/40 mb-2 block tracking-widest">Nome Completo</label>
-                  <input type="text" className="w-full bg-luxury-black border-none focus:ring-1 focus:ring-primary-red p-4 text-sm" placeholder="Seu nome" />
+                  <label className="text-[10px] uppercase font-bold text-white/40 mb-2 block tracking-widest">Nombre Completo</label>
+                  <input type="text" className="w-full bg-luxury-black border-none focus:ring-1 focus:ring-primary-red p-4 text-sm" placeholder="Tu nombre" />
                 </div>
                 <div>
                   <label className="text-[10px] uppercase font-bold text-white/40 mb-2 block tracking-widest">WhatsApp</label>
@@ -403,20 +403,20 @@ const Contact = () => {
                 </div>
               </div>
               <div>
-                <label className="text-[10px] uppercase font-bold text-white/40 mb-2 block tracking-widest">Assunto de interesse</label>
+                <label className="text-[10px] uppercase font-bold text-white/40 mb-2 block tracking-widest">Asunto de interés</label>
                 <select className="w-full bg-luxury-black border-none focus:ring-1 focus:ring-primary-red p-4 text-sm appearance-none">
-                  <option>Consultar veículo em estoque</option>
-                  <option>Encomendar modelo exclusivo</option>
-                  <option>Vender meu veículo</option>
-                  <option>Serviços mecânicos</option>
+                  <option>Consultar vehículo en stock</option>
+                  <option>Encargar modelo exclusivo</option>
+                  <option>Vender mi vehículo</option>
+                  <option>Servicios mecánicos</option>
                 </select>
               </div>
               <div>
-                <label className="text-[10px] uppercase font-bold text-white/40 mb-2 block tracking-widest">Mensagem</label>
-                <textarea rows={4} className="w-full bg-luxury-black border-none focus:ring-1 focus:ring-primary-red p-4 text-sm" placeholder="Como podemos ajudá-lo?" />
+                <label className="text-[10px] uppercase font-bold text-white/40 mb-2 block tracking-widest">Mensaje</label>
+                <textarea rows={4} className="w-full bg-luxury-black border-none focus:ring-1 focus:ring-primary-red p-4 text-sm" placeholder="¿Cómo podemos ayudarte?" />
               </div>
               <button className="w-full bg-primary-red py-5 text-sm font-bold uppercase tracking-[0.2em] hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
-                ENVIAR AGORA
+                ENVIAR AHORA
                 <ArrowRight className="w-4 h-4" />
               </button>
             </form>
@@ -440,33 +440,33 @@ const Footer = () => {
               <span className="font-display font-bold text-2xl tracking-tighter uppercase italic text-primary-red">MultiMarcas</span>
             </div>
             <p className="text-white/40 max-w-sm text-sm leading-relaxed mb-8">
-              A maior variedade de veículos premium da fronteira. Qualidade, confiança e atendimento Personalizado em um só lugar.
+              La mayor variedad de vehículos premium de la frontera. Calidad, confianza y atención personalizada en un solo lugar.
             </p>
           </div>
           
           <div>
-            <h4 className="text-[10px] uppercase font-bold tracking-widest text-white mb-6">Links Rápidos</h4>
+            <h4 className="text-[10px] uppercase font-bold tracking-widest text-white mb-6">Enlaces Rápidos</h4>
             <ul className="space-y-4 text-sm text-white/40">
-              <li><a href="#inventário" className="hover:text-primary-red transition-colors">Estoque</a></li>
-              <li><a href="#serviços" className="hover:text-primary-red transition-colors">Serviços</a></li>
-              <li><a href="#sobre" className="hover:text-primary-red transition-colors">Sobre Nós</a></li>
-              <li><a href="#contato" className="hover:text-primary-red transition-colors">Trabalhe Conosco</a></li>
+              <li><a href="#inventario" className="hover:text-primary-red transition-colors">Stock</a></li>
+              <li><a href="#servicios" className="hover:text-primary-red transition-colors">Servicios</a></li>
+              <li><a href="#sobre" className="hover:text-primary-red transition-colors">Sobre Nosotros</a></li>
+              <li><a href="#contacto" className="hover:text-primary-red transition-colors">Trabaja con Nosotros</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-[10px] uppercase font-bold tracking-widest text-white mb-6">Suporte</h4>
+            <h4 className="text-[10px] uppercase font-bold tracking-widest text-white mb-6">Soporte</h4>
             <ul className="space-y-4 text-sm text-white/40">
-              <li><a href="#" className="hover:text-primary-red transition-colors">Termos de Uso</a></li>
-              <li><a href="#" className="hover:text-primary-red transition-colors">Privacidade</a></li>
-              <li><a href="#" className="hover:text-primary-red transition-colors">Garantia</a></li>
-              <li><a href="#" className="hover:text-primary-red transition-colors">Exportação</a></li>
+              <li><a href="#" className="hover:text-primary-red transition-colors">Términos de Uso</a></li>
+              <li><a href="#" className="hover:text-primary-red transition-colors">Privacidad</a></li>
+              <li><a href="#" className="hover:text-primary-red transition-colors">Garantía</a></li>
+              <li><a href="#" className="hover:text-primary-red transition-colors">Exportación</a></li>
             </ul>
           </div>
         </div>
         
         <div className="flex flex-col md:flex-row justify-between items-center pt-10 border-t border-white/5 gap-6">
-          <p className="text-[10px] text-white/20 uppercase tracking-widest">© 2026 MultiMarcas CDE. Todos os direitos reservados.</p>
+          <p className="text-[10px] text-white/20 uppercase tracking-widest">© 2026 MultiMarcas CDE. Todos los derechos reservados.</p>
           <div className="flex gap-8">
             <p className="text-[10px] text-white/20 uppercase tracking-widest cursor-pointer hover:text-white">Cookies</p>
             <p className="text-[10px] text-white/20 uppercase tracking-widest cursor-pointer hover:text-white">Legal</p>
