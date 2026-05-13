@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Car, 
   ChevronRight, 
@@ -7,7 +7,6 @@ import {
   MapPin, 
   Menu, 
   X, 
-  Gamepad2, 
   ShieldCheck, 
   Wrench, 
   Instagram, 
@@ -337,7 +336,7 @@ const Services = () => {
                 className="relative z-10 grayscale hover:grayscale-0 transition-all duration-1000"
               />
               <div className="absolute bottom-6 -left-10 bg-primary-red p-8 z-20 hidden lg:block">
-                <p className="text-4xl font-display font-bold italic line-height-1 mb-1">+12</p>
+                <p className="text-4xl font-display font-bold italic mb-1 leading-none text-primary-red">+12</p>
                 <p className="text-[10px] uppercase font-bold tracking-widest opacity-80">Anos de Liderança</p>
               </div>
             </div>
@@ -448,7 +447,7 @@ const Footer = () => {
           <div>
             <h4 className="text-[10px] uppercase font-bold tracking-widest text-white mb-6">Links Rápidos</h4>
             <ul className="space-y-4 text-sm text-white/40">
-              <li><a href="#inventários" className="hover:text-primary-red transition-colors">Estoque</a></li>
+              <li><a href="#inventário" className="hover:text-primary-red transition-colors">Estoque</a></li>
               <li><a href="#serviços" className="hover:text-primary-red transition-colors">Serviços</a></li>
               <li><a href="#sobre" className="hover:text-primary-red transition-colors">Sobre Nós</a></li>
               <li><a href="#contato" className="hover:text-primary-red transition-colors">Trabalhe Conosco</a></li>
